@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+body {
+	background: #2b2d30;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+
+	& h1 {
+		color: #c49426;
+		font-family: "Lobster Two", serif;
+		font-size: 5rem;
+	}
+}
