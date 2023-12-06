@@ -1,4 +1,20 @@
 .window {
-	border: 2px solid  #c49426;
-	width
+	border:10px double  #c49426;
+	border-radius: 10px;
+	background: rgba(129, 217, 105, 0.85);
+	width: 50em;
+	height: 50em;
+
+	margin-top: 2em;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+@media windo (min-width: 40em)
+
+.loading-text {
+	font-size: 3.5rem;
 }
