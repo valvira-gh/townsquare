@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./layout.css";
 
-const Layout: React.FC = (): JSX.Element => {
-  const [loadingText, setLoadingText] = useState("Loading");
+interface LayoutTypes {
+  date: Date;
+  loadingText: null | string;
+  setLoadingText: React.Dispatch<string>;
+}
 
-  useEffect(() => {}, [1000]);
+const Layout: React.FC<LayoutTypes> = () => {
+  const [loadingText, setLoadingText] = useState("Loading");
+  const [date, setDate] = useState<number>(0);
+  useEffect(() => {
+    const date = new Date();
+  }, []);
 
   return (
     <div className={"window"}>

@@ -13,8 +13,9 @@
 
 }
 
-@media windo (min-width: 40em)
-
 .loading-text {
-	font-size: 3.5rem;
+	font-size: 3rem;
+	font-family: "Droid Sans Fallback", sans-serif;
+	color: #56451a;
+;
 }
