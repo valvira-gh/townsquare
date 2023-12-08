@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import LoadingAnimation from "../animations/LoadingAnimation";
 import './layout.css';
 
-const Layout: React.FC = () => {
-    // code
+interface LayoutProps {
+  startGame: () => void;
+  gameStarted: boolean;
+}
+
+const Layout: React.FC<LayoutProps>= ({ startGame, gameStarted }) => {
+  
+
 
   return (
     <div className="window">
-        <div>
+      <div>
+        {gameStarted ? null : (
+          <>
             <LoadingAnimation />
+            <button onClick={startGame}>Start Game</button>
+          </>
+        )}
+       
+        
          </div>
       </div>
     )
